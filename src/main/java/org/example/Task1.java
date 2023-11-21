@@ -8,16 +8,29 @@ public class Task1 {
 
     public static void decision(){
         //создам элемент листа LinkedList так как я не знаю что должно быть в списке будет строки
-        ArrayList<String> LinkedList = new ArrayList<String>();
-        LinkedList.add("Один");
-        LinkedList.add("Два");
-        LinkedList.add("Три");
+        ArrayList<String> linkedList = new ArrayList<>();
+        linkedList.add("Один");
+        linkedList.add("Два");
+        linkedList.add("Три");
+        linkedList.add("Три");
+        linkedList.add("Пять");
+        linkedList.add("Три");
+        linkedList.add("Три");
+        linkedList.add("Три");
+        linkedList.add("Три");
+        linkedList.add("Три");
 
+        float countElements = linkedList.size();
 
-        System.out.println(LinkedList);
+        if (countElements % 2 == 0) {
+            countElements = (countElements / 2) - 1;
+        }
+        else{
+            countElements = (countElements / 2) - 0.5f;
+        }
 
-
-
+        System.out.println(linkedList.get((int) countElements));
+        System.out.println(linkedList.size());
 
 
     }
