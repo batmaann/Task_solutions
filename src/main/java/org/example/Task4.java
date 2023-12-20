@@ -21,24 +21,17 @@ public class Task4 {
 
      */
 
-//    public boolean containsDuplicate(int[] nums) {
-//        for (int i = 0; i < nums.length; i++) {
-//            if (nums[i] == ){
-//
-//            }
-//
-//        }
-//
-//
-//    }
+
 
 
     public static boolean containsDuplicateDecision1(int[] nums) {
         Arrays.sort(nums);
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] == nums[i - 1])
+                System.out.println("найдены пара чисел это   --->>>    " + nums[i]+ "   и   "+ nums[i - 1]);
                 return true;
         }
+        System.out.println("числа не найдены");
         return false;
     }
 
