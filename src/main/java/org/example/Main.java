@@ -15,7 +15,7 @@ public class Main {
         //Task3.maxProfitDecision2(new int[]{2,3,4});
         //Task4.containsDuplicateDecision1(new int[]{1,2,3,4,5,6,8,7,1});
         //Task5.thirdMaxDecision1(new int[]{3, 2, 7, 11, 15, 8});
-        Task6.Decision1("dddeeeklln");
+        //Task6.Decision1("dddeeeklln");
 
     }
 
