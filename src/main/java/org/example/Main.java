@@ -1,5 +1,6 @@
 package org.example;
 
+import java.awt.print.Book;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,6 +17,7 @@ public class Main {
         //Task4.containsDuplicateDecision1(new int[]{1,2,3,4,5,6,8,7,1});
         //Task5.thirdMaxDecision1(new int[]{3, 2, 7, 11, 15, 8});
         //Task6.Decision1("dddeeeklln");
+        Book_solutions.searchNumber();
 
     }
 
