@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.Random;
 
+
 public class Book_solutions {
     /*
     Здесь я записываю задачи по книге Грокаем алгоритмы
@@ -46,12 +47,40 @@ public class Book_solutions {
 
     /*
     А тут уже описан конкретный бинарный поиск
+    его скорость можно определить как log2(n)
+    например если n = 8 то тогда ответ будет log2(8)= 3 потому что 2 в степени 3 =8
+
     его работа заключатся в том что
     */
-    public static void searchNumber1() {
+    public static void binary_search() {
+        Random random = new Random();
+        int[] massiv = new int[100];// создали массив
+        for (int i = 0; i < 100; i++) {
+            massiv[i] = i + 1;
+        }
 
+        int target = random.nextInt(100) + 1;
+
+        int low = 0;
+        int high = massiv.length;
+        System.out.println(high);//нашли его длину
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            System.out.println(mid);// нашли середину массива
+            int guess = mid;
+            if (guess == target) {
+                System.out.println("Ура! Я угадал число: " + guess);
+                break;
+
+            } else if (guess > target) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
 
     }
+
 
 
 
