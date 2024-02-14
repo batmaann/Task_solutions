@@ -93,7 +93,30 @@ public class Book_solutions {
     Сортировка выбором
     Это глава № 2
     параграф Сортировка выбором
+    есть 3 метода
+    1 findSmallest
+    Здесь берется список и из списка ищется наименьший элемент путем перебора
+
+    2 selectionSort
+    Здесь
+    3 name1
+
     */
+
+
+
+
+    public static  List<Integer> name1(){
+        List<Integer> arr = new ArrayList<>();
+        arr.add(5);
+        arr.add(3);
+        arr.add(6);
+        arr.add(2);
+        arr.add(10);
+        findSmallest(arr);
+        selectionSort(arr);
+        return arr;
+    }
 
 
     public static int findSmallest(List<Integer> arr) {
@@ -115,14 +138,20 @@ public class Book_solutions {
 
     public static List<Integer> selectionSort(List<Integer> arr) {
         List<Integer> newArr = new ArrayList<>();
-        int size = arr.size();
+        int size = arr.size();// записали размер списка
         for (int i = 0; i < size; i++) {
-            int smallestIndex = findSmallest(arr);
+            int smallestIndex = findSmallest(arr);// в smallestIndex записываем значение из метода findSmallest
             newArr.add(arr.remove(smallestIndex));
+            System.out.println(newArr);
         }
         System.out.println(arr);
         return newArr;
+
+
+
+
     }
+
 
 
 }

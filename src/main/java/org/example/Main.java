@@ -24,17 +24,11 @@ public class Main {
         //Book_solutions.binary_search();
 
 
-        List<Integer> arr = new ArrayList<>();
-        arr.add(5);
-        arr.add(3);
-        arr.add(6);
-        arr.add(2);
-        arr.add(10);
 
 
 
-        Book_solutions.findSmallest(arr);
-        Book_solutions.selectionSort(arr);
+        Book_solutions.name1();
+
 
 
 
