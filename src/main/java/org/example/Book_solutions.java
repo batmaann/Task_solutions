@@ -1,6 +1,8 @@
 package org.example;
 
 import java.util.Random;
+import java.util.ArrayList;
+import java.util.*;
 
 
 public class Book_solutions {
@@ -50,7 +52,10 @@ public class Book_solutions {
     его скорость можно определить как log2(n)
     например если n = 8 то тогда ответ будет log2(8)= 3 потому что 2 в степени 3 =8
 
-    его работа заключатся в том что
+    Его работа можно описать как поиск льва в пустыне
+    берем пустыню делим на пополам
+    если в одной половине нет льва, значит лев в другой половине
+    делим область, где есть лев ещё, а половину и.т.д
     */
     public static void binary_search() {
         Random random = new Random();
@@ -84,4 +89,72 @@ public class Book_solutions {
 
 
 
+    /*
+    Сортировка выбором
+    Это глава № 2
+    параграф Сортировка выбором
+    */
+
+
+    public static int findSmallest(List<Integer> arr) {
+        int smallest = arr.get(0);
+        int smallestIndex = 0;// «Для хранения наименьшего значения»
+
+        for (int i = 1; i < arr.size(); i++) {// «Для хранения индекса наименьшего значения»
+            if (arr.get(i) < smallest) {
+                smallest = arr.get(i);
+                smallestIndex = i;
+            }
+        }
+        System.out.println("Список: " + arr + ", а это самый маленьнкий элемент: " + arr.get(smallestIndex));
+
+
+        return smallestIndex;
+
+    }
+
+    public static List<Integer> selectionSort(List<Integer> arr) {
+        List<Integer> newArr = new ArrayList<>();
+        int size = arr.size();
+        for (int i = 0; i < size; i++) {
+            int smallestIndex = findSmallest(arr);
+            newArr.add(arr.remove(smallestIndex));
+        }
+        System.out.println(arr);
+        return newArr;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

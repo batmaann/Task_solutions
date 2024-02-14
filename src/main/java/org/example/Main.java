@@ -1,7 +1,10 @@
 package org.example;
 
 import java.awt.print.Book;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -18,11 +21,25 @@ public class Main {
         //Task5.thirdMaxDecision1(new int[]{3, 2, 7, 11, 15, 8});
         //Task6.Decision1("dddeeeklln");
         //Book_solutions.searchNumber();
-        Book_solutions.binary_search();
+        //Book_solutions.binary_search();
+
+
+        List<Integer> arr = new ArrayList<>();
+        arr.add(5);
+        arr.add(3);
+        arr.add(6);
+        arr.add(2);
+        arr.add(10);
+
+
+
+        Book_solutions.findSmallest(arr);
+        Book_solutions.selectionSort(arr);
+
+
+
+
+
 
     }
-
-
-
-
 }
