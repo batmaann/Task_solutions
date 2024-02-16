@@ -27,7 +27,18 @@ public class Main {
 
 
 
-        Book_solutions.name1();
+        //Book_solutions.name1();
+
+
+        Book_solutions.factorial1(1);
+
+
+
+
+
+        //Book_solutions.factorialSumm();
+
+
 
 
 

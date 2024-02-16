@@ -104,9 +104,7 @@ public class Book_solutions {
     */
 
 
-
-
-    public static  List<Integer> name1(){
+    public static List<Integer> name1() {
         List<Integer> arr = new ArrayList<>();
         arr.add(5);
         arr.add(3);
@@ -141,16 +139,47 @@ public class Book_solutions {
         int size = arr.size();// записали размер списка
         for (int i = 0; i < size; i++) {
             int smallestIndex = findSmallest(arr);// в smallestIndex записываем значение из метода findSmallest
-            newArr.add(arr.remove(smallestIndex));
+            newArr.add(arr.remove(smallestIndex));// в новый список добовляю значение smallestIndex, но приэтом удаляю это значение из smallestIndex
             System.out.println(newArr);
         }
         System.out.println(arr);
         return newArr;
 
-
-
-
     }
+
+    /*
+
+    Это глава № 3
+    параграф Рекурсия
+
+    функция вызывает саму себя внутри своего тела.
+
+
+    */
+
+    // Рекурсивный метод для подсчета факториала числа
+
+    public static int factorial1(int n) {
+        // Базовый случай
+        if (n == 0) {
+            System.out.println("Результат: " + 1); // Выводим результат, если n равно 0
+            return 1;
+        } else {
+            // Рекурсивный случай
+            int result = n * factorial1(n - 1); // Вызываем рекурсивно функцию для n - 1 и сохраняем результат
+            System.out.println("Результат: " + result); // Выводим результат
+            return result; // Возвращаем результат
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 
 
