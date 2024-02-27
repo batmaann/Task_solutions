@@ -30,7 +30,18 @@ public class Main {
         //Book_solutions.name1();
 
 
-        Book_solutions.factorial1(1);
+        //Book_solutions.factorial1(1);
+
+
+
+        int[] arr = {2,4,6};
+
+
+
+        //Book_solutions.sumMassiveRec(arr);
+
+
+        Book_solutions.name123(arr);
 
 
 
