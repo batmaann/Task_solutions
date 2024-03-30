@@ -3,6 +3,7 @@ package org.example;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.*;
+import java.util.HashMap;
 
 
 public class Book_solutions {
@@ -199,9 +200,6 @@ public class Book_solutions {
     }
 
 
-
-
-
     /*
     метод суммы массива из элементов через рекурсию
     step I определить базовый случай
@@ -226,57 +224,35 @@ public class Book_solutions {
     }
 
 
-
-        public static void name123(int[] args) {
-            int[] arr = {2, 3, 7, 8, 10};
-            for (int i = 0; i < arr.length; i++) {
-                for (int j = 1; j <= 10; j++) {
-                    System.out.println(arr[i] + " * " + j + " = " + (arr[i] * j));
-                }
+    public static void name123(int[] args) {
+        int[] arr = {2, 3, 7, 8, 10};
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.println(arr[i] + " * " + j + " = " + (arr[i] * j));
             }
         }
+    }
 
 
+    /*
+
+    Это глава № V
+    хеш-таблицы
+    суть в том что можно и не тратить время на поиск
+    хэш таблицы позволяют реализовать всё быстро
+
+    */
 
 
+    public static void hashBook() {
+        HashMap<String, Double> book = new HashMap<>();
 
+        book.put("apple", 0.67);
+        System.out.println("Яблоки стоят " + book.get("apple") + " доллара");
 
-
-
-
-
+        book.put("milk", 1.49);
+        System.out.println("Молоко стоит " + book.get("milk") + " доллара");
+    }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

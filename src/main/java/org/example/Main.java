@@ -22,9 +22,8 @@ public class Main {
         //Task6.Decision1("dddeeeklln");
         //Book_solutions.searchNumber();
         //Book_solutions.binary_search();
-
-
-
+        Book_solutions.hashBook();
+        Book_solutions.check_voter();
 
 
         //Book_solutions.name1();
@@ -33,28 +32,16 @@ public class Main {
         //Book_solutions.factorial1(1);
 
 
-
-        int[] arr = {2,4,6};
-
+        //int[] arr = {2,4,6};
 
 
         //Book_solutions.sumMassiveRec(arr);
 
 
-        Book_solutions.name123(arr);
-
-
-
+        //Book_solutions.name123(arr);
 
 
         //Book_solutions.factorialSumm();
-
-
-
-
-
-
-
 
 
     }
