@@ -22,9 +22,7 @@ public class Main {
         //Task6.Decision1("dddeeeklln");
         //Book_solutions.searchNumber();
         //Book_solutions.binary_search();
-        Book_solutions.hashBook();
-        Book_solutions.check_voter();
-
+        //Book_solutions.hashBook();
 
         //Book_solutions.name1();
 
