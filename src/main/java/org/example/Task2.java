@@ -60,7 +60,7 @@ public class Task2 {
     }
 
 
-        public int[] twoSumDecision3(int[] nums, int target) {
+        public static int[] twoSumDecision3(int[] nums, int target) {
             Map<Integer, Integer> numMap = new HashMap<>();
             int n = nums.length;
 
