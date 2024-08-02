@@ -3,8 +3,6 @@ package org.example.book_solutions;
 import java.util.Arrays;
 
 public class Chapter_4 {
-
-
     /*
 
     Это глава № IV
@@ -20,22 +18,18 @@ public class Chapter_4 {
     public static int sumMassive() {
         int[] arr = {2, 4, 6};
         int sum = 0; // Переменная sum должна быть объявлена перед циклом, чтобы сохранять сумму всех элементов массива
-
         for (int i = 0; i < arr.length; i++) {
             int x = arr[i];
             sum = sum + x;
         }
-
         System.out.println("Сумма элементов массива: " + sum); // Выводим результат
         return sum;
     }
-
 
     /*
     метод суммы массива из элементов через рекурсию
     step I определить базовый случай
     step II каждый рекурсивный вызов должен приближать вас к пустому массиву Сведение
-
     */
     int[] arr = {2};
 
@@ -47,7 +41,6 @@ public class Chapter_4 {
             return 0;
         } else {
             // Иначе, рекурсивно вызываем функцию для подмассива без первого элемента и добавляем первый элемент.
-
             int sum = arr[0] + sumMassiveRec(Arrays.copyOfRange(arr, 1, arr.length));
             System.out.println("Сумма элементов массива: " + sum);
             return sum;

@@ -1,7 +1,6 @@
 package org.example;
 
 
-import org.example.book_solutions.Chapter_1;
 import org.example.book_solutions.Chapter_4;
 
 
@@ -29,7 +28,7 @@ public class Main {
         //Book_solutions.factorial1(1);
 
 
-        //int[] arr = {2,4,6};
+        int[] arr = {2,4,6};
 
 
         //Book_solutions.sumMassiveRec(arr);
@@ -40,10 +39,12 @@ public class Main {
 
         //Book_solutions.factorialSumm();
         Chapter_4 chapter4 = new Chapter_4();
+
+        chapter4.sumMassiveRec(arr);
         
 
 
-        Chapter_1 chapter2 = new Chapter_1();
+        //Chapter_1 chapter2 = new Chapter_1();
 
 
 
