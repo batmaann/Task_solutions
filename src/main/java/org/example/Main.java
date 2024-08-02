@@ -1,15 +1,9 @@
 package org.example;
 
 
-import java.awt.print.Book;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import org.example.book_solutions.Chapter_1;
+import org.example.book_solutions.Chapter_4;
 
-import java.util.HashMap;
-
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,12 +39,16 @@ public class Main {
 
 
         //Book_solutions.factorialSumm();
+        Chapter_4 chapter4 = new Chapter_4();
+        
+
+
+        Chapter_1 chapter2 = new Chapter_1();
+
 
 
 
     }
-
-
 
 
 }

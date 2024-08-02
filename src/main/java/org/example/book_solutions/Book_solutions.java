@@ -1,4 +1,4 @@
-package org.example;
+package org.example.book_solutions;
 
 import java.util.Random;
 import java.util.ArrayList;
